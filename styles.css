@@ -261,8 +261,8 @@ h2 {
 .timing-list {
   padding: 0;
   margin: 0 auto;
-  max-width: 600px;
-  text-align: center; /* 👈 ЗМІНЕНО */
+  max-width: 500px;
+  text-align: center; /* Замість left */
 }
 
 .timing-list li {
@@ -272,14 +272,14 @@ h2 {
   font-weight: 600;
   margin-bottom: 20px;
   color: var(--color-text);
-  line-height: 1.5;
 }
 
 .timing-list .note {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 10px;
   margin-top: 5px;
+  color: #666;
+  text-align: center; /* Вирівнювання і приміток */
 }
 
 /* Локація */
@@ -347,23 +347,51 @@ h2 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  position: relative;
-  background-clip: padding-box;
-  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.2);
-  border: 1px solid transparent;
-  background-origin: border-box;
+  border: none;
+  background-size: 200% 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.swatch::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ccc, #eee);
-  z-index: -1;
+.swatch:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Яскравіші тканинні градієнти */
+.gradient1 {
+  background: linear-gradient(135deg, #f6e0a8 0%, #e5c77f 100%);
+}
+
+.gradient2 {
+  background: linear-gradient(135deg, #ebc2c5 0%, #d49ba0 100%);
+}
+
+.gradient3 {
+  background: linear-gradient(135deg, #e9a67e 0%, #d17b50 100%);
+}
+
+.gradient4 {
+  background: linear-gradient(135deg, #56abb6 0%, #3b8d96 100%);
+}
+
+.gradient5 {
+  background: linear-gradient(135deg, #070808 0%, #2f2f2f 100%);
+}
+
+.gradient6 {
+  background: linear-gradient(135deg, #fffaf3 0%, #f1e9dc 100%);
+}
+
+.gradient7 {
+  background: linear-gradient(135deg, #bf9f84 0%, #a68368 100%);
+}
+
+.gradient8 {
+  background: linear-gradient(135deg, #c4e2ff 0%, #a0c7e9 100%);
 }
 
 .child-caption-dress {
