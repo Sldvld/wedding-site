@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Весілля Анни та Владислава</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="intro-section">
+      <div class="intro-card">
+        <h2 class="wedding-label">WEDDING DAY</h2>
+        <h1 class="wedding-names">
+          VLADYSLAV <span class="and">and</span> ANNA
+        </h1>
+        <div class="center-photo">
+          <img src="1.jpg" alt="Пара тримається за руки" />
+        </div>
+        <p class="invitation-text">
+          З особливою радістю і хвилюванням <br />
+          запрошуємо вас розділити з нами <br />
+          найважливіший день у нашому житті —<br />
+          день, з якого починається <br />
+          <span class="family-highlight">наша сім'я.</span>
+        </p>
+        <div class="favorite-song">
+          <span class="song-label">*наша улюблена пісня</span>
+          <button id="playBtn" class="play-button" aria-label="Увімкнути пісню">
+            <svg
+              id="playIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon points="6 4 20 12 6 20 6 4" />
+            </svg>
+            <svg
+              id="pauseIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="display: none"
+            >
+              <rect x="6" y="4" width="4" height="16" />
+              <rect x="14" y="4" width="4" height="16" />
+            </svg>
+          </button>
+          <audio id="favSong" preload="auto">
+            <source src="apocalypse.mp3" type="audio/mpeg" />
+            Ваш браузер не підтримує відтворення аудіо.
+          </audio>
+        </div>
+      </div>
+    </section>
+    <section class="section childhood-photos fade-in">
+      <h2
+        class="childhood-title"
+        style="font-family: 'Montserrat', sans-serif; text-align: center"
+      >
+        Впізнаєте цих малих?
+      </h2>
+      <div class="childhood-gallery">
+        <div class="child-photo">
+          <img src="vlad.png" alt="Маленький Влад" />
+          <p class="child-caption">
+            Цікаво, хто буде моєю дружиною,<br />
+            коли я виросту?
+          </p>
+        </div>
+        <div class="child-photo">
+          <img src="anna.png" alt="Маленька Анна" />
+          <p class="child-caption">Я буду!</p>
+        </div>
+      </div>
+    </section>
+    <section class="calendar-section">
+      <div class="calendar-card">
+        <h2 class="calendar-title">Мріємо розділити цей день з вами</h2>
+        <h3 class="calendar-subtitle">Вересень 2025</h3>
+        <div class="calendar-mini">
+          <div class="day-name">ПН</div>
+          <div class="day-name">ВТ</div>
+          <div class="day-name">СР</div>
+          <div class="day-name">ЧТ</div>
+          <div class="day-name">ПТ</div>
+          <div class="day-name">СБ</div>
+          <div class="day-name">НД</div>
+
+          <div class="day">1</div>
+          <div class="day">2</div>
+          <div class="day">3</div>
+          <div class="day">4</div>
+          <div class="day">5</div>
+          <div class="day">6</div>
+          <div class="day">7</div>
+          <div class="day">8</div>
+          <div class="day">9</div>
+          <div class="day">10</div>
+          <div class="day">11</div>
+          <div class="day">12</div>
+          <div class="day">13</div>
+          <div class="day">14</div>
+          <div class="day">15</div>
+          <div class="day">16</div>
+          <div class="day">17</div>
+          <div class="day">18</div>
+          <div class="day">19</div>
+          <div class="day">20</div>
+          <div class="day">21</div>
+          <div class="heart-day">22</div>
+          <div class="day">23</div>
+          <div class="day">24</div>
+          <div class="day">25</div>
+          <div class="day">26</div>
+          <div class="day">27</div>
+          <div class="day">28</div>
+          <div class="day">29</div>
+          <div class="day">30</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timing fade-in">
+      <h2 class="wedding-label">TIMING OF THE DAY</h2>
+      <ul class="timing-list">
+        <li>
+          11:45 - збір гостей
+          <p class="note">Будемо раді обійняти кожного перед початком!</p>
+        </li>
+        <li>
+          12:00 - урочиста церемонія
+          <p class="note">
+            Це момент, коли ми скажемо свої найважливіші «так». Церемонія
+            розпочнеться вчасно, і, на жаль, після початку вхід буде зачинено.
+            Тому дуже просимо бути вчасно, щоб розділити з нами цю мить.
+          </p>
+        </li>
+        <li>
+          13:00 - вітання та легкі частування
+          <p class="note">
+            Час привітати одне одного та підняти келих за кохання!
+          </p>
+        </li>
+        <li>
+          14:00 - святковий банкет
+          <p class="note">Готуйтеся до смачних страв, музики та танців!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="location-section-textonly">
+      <div class="location-text fade-in">
+        <h2 class="location-title-footer">LOCATION</h2>
+        <p class="location-note">
+          ЗАГС №1, проспект Академіка Глушкова 1к8, павільйон 8
+        </p>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=ЗАГС+№1,+проспект+Академіка+Глушкова+1к8,+Київ"
+          target="_blank"
+          class="map-button"
+        >
+          дивитися на мапі
+        </a>
+      </div>
+    </section>
+
+    <section class="section palette fade-in">
+      <h2 class="wedding-label">DRESS CODE</h2>
+      <p class="child-caption-dress">жінки</p>
+      <div class="swatches">
+        <div class="swatch" style="background-color: #f6e0a8"></div>
+        <div class="swatch" style="background-color: #ebc2c5"></div>
+        <div class="swatch" style="background-color: #e9a67e"></div>
+        <div class="swatch" style="background-color: #56abb6"></div>
+      </div>
+
+      <p class="child-caption-dress">чоловіки</p>
+      <div class="swatches">
+        <div class="swatch" style="background-color: #070808"></div>
+        <div class="swatch" style="background-color: #fffaf3"></div>
+        <div class="swatch" style="background-color: #bf9f84"></div>
+        <div class="swatch" style="background-color: #c4e2ff"></div>
+      </div>
+      <p class="note-dress">
+        *нам буде дуже приємно, якщо ви пдтримаєте кольорову гаму нашого свята
+      </p>
+    </section>
+
+    <section
+      class="location-section-textonly"
+      style="background-image: url('1.png')"
+    >
+      <div class="location-text fade-in">
+        <h2 class="location-title-footer">LOCATION</h2>
+        <p class="location-note">
+          Оранжерея ВДНГ, проспект Академіка Глушкова 1П28
+        </p>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Оранжерея+ВДНГ,+Київ,+проспект+Академіка+Глушкова+1П28"
+          target="_blank"
+          class="map-button"
+        >
+          дивитися на мапі
+        </a>
+      </div>
+    </section>
+    <section class="section telegram fade-in">
+      <h2 class="wedding-label">TELEGRAM</h2>
+
+      <p class="note-dress">
+        Ми створили Telegram-канал, у якому будемо ділитися усім важливим, що
+        стосується нашого свята: оновлення, деталі, таймінг, посилання на фото
+        та відео — усе буде там.
+      </p>
+      <p class="note-dress">
+        Просимо до 08.09.2025 пройти коротке опитування на каналі:
+      </p>
+      <p class="note-dress">- чи зможете бути з нами в цей день</p>
+      <p class="note-dress">- яку страву обираєте в якості основної</p>
+
+      <a
+        href="https://t.me/+1FBxbodKrpE0NzJi"
+        target="_blank"
+        class="telegram-button"
+      >
+        перейти до каналу
+      </a>
+
+      <p class="farewell">до зустрічі</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
