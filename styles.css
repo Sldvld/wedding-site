@@ -31,9 +31,11 @@ body {
 }
 
 .intro-card {
+  padding-bottom: 120px;
   position: relative;
   background-color: var(--color-card-bg);
   padding: 40px 30px 80px;
+  padding-bottom: 120px;
   max-width: 600px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -85,7 +87,9 @@ body {
 }
 
 .favorite-song {
-  position: absolute;
+  position: static;
+  margin-top: 30px;
+  justify-content: end;
   bottom: 20px;
   right: 20px;
   display: flex;
@@ -254,6 +258,13 @@ h2 {
 }
 
 /* Таймінг */
+.timing-list {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center; /* 👈 ЗМІНЕНО */
+}
+
 .timing-list li {
   font-family: "Libre Baskerville", serif;
   list-style: none;
@@ -261,13 +272,14 @@ h2 {
   font-weight: 600;
   margin-bottom: 20px;
   color: var(--color-text);
+  line-height: 1.5;
 }
 
 .timing-list .note {
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  margin-top: 2px;
+  font-size: 0.85rem;
   color: #666;
+  margin-top: 5px;
 }
 
 /* Локація */
