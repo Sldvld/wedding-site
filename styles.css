@@ -411,16 +411,34 @@ h2 {
 }
 
 /* Адаптивність */
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 1.6em;
+@media screen and (max-width: 600px) {
+  .intro-card,
+  .calendar-card {
+    padding: 20px;
   }
-  .calendar {
-    max-width: 100%;
-    font-size: 13px;
+
+  .childhood-gallery {
+    flex-direction: column;
+    gap: 30px;
   }
-  .heart-day {
-    width: 36px;
-    height: 36px;
+
+  .swatches {
+    gap: 12px;
+  }
+
+  .swatch {
+    width: 50px;
+    height: 50px;
+  }
+
+  .telegram-button,
+  .map-button {
+    width: 90%;
+    max-width: 300px;
+    font-size: 0.9rem;
+  }
+
+  .farewell {
+    font-size: 28px;
   }
 }
